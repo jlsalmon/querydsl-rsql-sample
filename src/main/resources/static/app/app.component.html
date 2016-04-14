@@ -1,0 +1,13 @@
+<input [(ngModel)]="query" style="width: 300px;"/>
+
+<button (click)="search()">Search</button>
+
+<div>
+  results:
+  {{results | json}}
+</div>
+
+<div style="color: red" *ngIf="error">
+  error:
+  {{error | json}}
+</div>

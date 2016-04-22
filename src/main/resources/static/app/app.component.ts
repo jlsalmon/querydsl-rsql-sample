@@ -15,7 +15,7 @@ export class AppComponent {
   error: any;
 
   constructor(@Inject(EntityService) private entityService : EntityService) {
-    this.query = 'name == entity';
+    this.query = 'name == \'entity 1\'';
   }
 
   search() {
